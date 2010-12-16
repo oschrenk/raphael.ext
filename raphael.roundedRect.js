@@ -41,7 +41,8 @@ Raphael.fn.roundedRect = function(x, y, width, height, radiusTopLeft, radiusTopR
 	" l" + (-(width - radiusBottomRight - radiusBottomLeft)) + "," + 0 +
 	" q" + (-radiusBottomLeft) + "," + 0 + "," + (-radiusBottomLeft) + "," + (-radiusBottomLeft) + 
 	" l" + 0 + "," + (-(height - radiusBottomLeft - radiusTopLeft)) + 
-	" q" + 0 + "," + (-radiusTopLeft) + "," + radiusTopLeft + "," + (-radiusTopLeft); 
+	" q" + 0 + "," + (-radiusTopLeft) + "," + radiusTopLeft + "," + (-radiusTopLeft) + 
+	" Z"; 
 	
 	return this.path(path);
 };
